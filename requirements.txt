@@ -1,0 +1,18 @@
+# Claude Trader - Natural Language Trading for Polymarket
+# Python 3.10+ required
+
+# Polymarket Trading
+py-clob-client>=0.17
+
+# Configuration & Security
+cryptography>=41.0
+pyyaml>=6.0
+
+# HTTP
+requests>=2.31
+
+# Display
+rich>=13.0.0
+
+# WebSocket
+websocket-client>=1.6.0
