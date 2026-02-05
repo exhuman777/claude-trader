@@ -16,3 +16,15 @@ rich>=13.0.0
 
 # WebSocket
 websocket-client>=1.6.0
+
+# Voice Trading
+sounddevice>=0.4.6
+openai-whisper>=20231117
+numpy>=1.24.0
+
+# Web Terminal
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# Claude API for NLP
+anthropic>=0.40.0

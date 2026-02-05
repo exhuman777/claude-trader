@@ -1,0 +1,165 @@
+{
+  "timestamp": "2026-01-31T09:07:41.476806",
+  "summary": {
+    "passed": 29,
+    "failed": 0,
+    "skipped": 2
+  },
+  "tests": [
+    {
+      "name": "Python version >= 3.10",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "Project structure exists",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "Data directory exists",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "Trading config exists",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "Trading config valid JSON",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "py-clob-client installed",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "requests installed",
+      "phase": "environment",
+      "status": "PASS"
+    },
+    {
+      "name": "Gamma API reachable",
+      "phase": "api",
+      "status": "PASS"
+    },
+    {
+      "name": "CLOB API reachable",
+      "phase": "api",
+      "status": "PASS"
+    },
+    {
+      "name": "Data API reachable",
+      "phase": "api",
+      "status": "PASS"
+    },
+    {
+      "name": "Can fetch top volume markets",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can search markets",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get market by slug",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get price",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get orderbook",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can fetch recent trades",
+      "phase": "market_data",
+      "status": "PASS"
+    },
+    {
+      "name": "Can initialize CLOB client",
+      "phase": "account",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get balances",
+      "phase": "account",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get positions",
+      "phase": "account",
+      "status": "PASS"
+    },
+    {
+      "name": "Can get open orders",
+      "phase": "account",
+      "status": "PASS"
+    },
+    {
+      "name": "Order args validation",
+      "phase": "trading",
+      "status": "PASS"
+    },
+    {
+      "name": "Price formatting",
+      "phase": "trading",
+      "status": "PASS"
+    },
+    {
+      "name": "Ladder price calculation",
+      "phase": "trading",
+      "status": "PASS"
+    },
+    {
+      "name": "Market buy calculation",
+      "phase": "trading",
+      "status": "SKIP"
+    },
+    {
+      "name": "Whale follow dry run",
+      "phase": "automation",
+      "status": "PASS"
+    },
+    {
+      "name": "Top volume dry run",
+      "phase": "automation",
+      "status": "PASS"
+    },
+    {
+      "name": "Scan opportunities",
+      "phase": "automation",
+      "status": "PASS"
+    },
+    {
+      "name": "Trader profile fetch",
+      "phase": "automation",
+      "status": "PASS"
+    },
+    {
+      "name": "Full research flow",
+      "phase": "integration",
+      "status": "SKIP"
+    },
+    {
+      "name": "Full automation flow (dry)",
+      "phase": "integration",
+      "status": "PASS"
+    },
+    {
+      "name": "Display functions work",
+      "phase": "integration",
+      "status": "PASS"
+    }
+  ]
+}

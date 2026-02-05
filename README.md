@@ -45,17 +45,32 @@ Claude: ✓ Order matched
 ```bash
 git clone https://github.com/exhuman777/claude-trader.git
 cd claude-trader
+./setup.sh
+```
 
+Or manually:
+```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-# Setup credentials (guided wizard)
 python setup_wizard.py
-
-# Start Claude Code
-claude
 ```
+
+## Voice Trading
+
+Trade using your voice - supports Polish and English:
+
+```bash
+python voice/voice_trader.py
+```
+
+Hold ENTER to speak:
+- "buy 10 shares at 35 cents"
+- "kup dziesięć akcji po trzydzieści pięć centów"
+- "pokaż zamówienia" / "show orders"
+- "anuluj wszystko" / "cancel all"
+
+Voice is transcribed locally using Whisper - nothing leaves your machine.
 
 ## What you can say
 
@@ -140,6 +155,22 @@ from auto import top_volume_bet
 top_volume_bet(bet=5, count=3)
 ```
 
+## Web Terminal
+
+Browser-based trading with voice:
+
+```bash
+python web/server.py
+# Open http://localhost:8000
+```
+
+Features:
+- xterm.js terminal in browser
+- Voice input (hold mic button or V key)
+- Quick command buttons
+- API endpoints sidebar
+- Memory/insights commands
+
 ## Files
 
 ```
@@ -147,11 +178,37 @@ top_volume_bet(bet=5, count=3)
 ├── interactive.py      # Interactive CLI
 ├── trade.py            # Direct CLI
 ├── auto.py             # Automation
+├── voice/              # Voice trading
+│   ├── recorder.py     # Push-to-talk mic recording
+│   ├── transcribe.py   # Whisper PL/EN transcription
+│   └── voice_trader.py # Voice→Trade pipeline
+├── web/                # Web terminal
+│   ├── server.py       # FastAPI + WebSocket server
+│   └── static/         # Frontend assets
+├── memory/             # Session memory
+│   ├── store.py        # Knowledge persistence
+│   └── mindmap.py      # Strategy tracking
 ├── cockpit.py          # Display helpers
 ├── setup_wizard.py     # Credential setup
 ├── CLAUDE.md           # AI agent instructions
 └── PLAYBOOK.md         # Proven patterns
 ```
+
+## Memory System
+
+Learns from your sessions to avoid repeating analysis:
+
+```bash
+# In terminal or web
+> memory    # Show context from past sessions
+> insights  # Show what worked / what to avoid
+```
+
+Memory tracks:
+- Successful trading patterns
+- Failed approaches to avoid
+- Market observations
+- Cached research results
 
 ## Security
 

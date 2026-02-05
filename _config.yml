@@ -1,0 +1,9 @@
+# GitHub Pages configuration
+title: Claude Trader
+description: Trade Polymarket with your voice - Natural language trading for Claude Code users
+
+# Build settings
+theme: null
+
+# Serve from docs folder
+# Configure in GitHub: Settings > Pages > Source: Deploy from branch > /docs

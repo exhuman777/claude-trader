@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Trader - Voice Trading for Polymarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Claude Trader</h1>
+            <p class="tagline">Trade Polymarket with your voice</p>
+        </header>
+
+        <section class="hero">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">voice_trader.py</span>
+                </div>
+                <div class="terminal-body">
+                    <pre><code><span class="prompt">$</span> python voice/voice_trader.py
+
+<span class="info">Hold ENTER to speak...</span>
+
+<span class="user">🎤 "buy ten shares at thirty five cents"</span>
+
+<span class="output">┌────────────┬─────────────────────────┐
+│  BUY YES   │ 10 @ 35¢ ($3.50)        │
+│  Market    │ Trump wins January 25   │
+└────────────┴─────────────────────────┘</span>
+
+<span class="prompt">Execute? [y/N]:</span> <span class="input">y</span>
+<span class="success">✓ Order matched</span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>🎤 Natural Language</h3>
+                <p>Speak commands naturally. "Buy 10 at 35 cents" or "pokaż zamówienia"</p>
+            </div>
+            <div class="feature">
+                <h3>🇵🇱 Polish & English</h3>
+                <p>Full Polish language support with automatic detection</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Local & Private</h3>
+                <p>Whisper runs locally. Your voice never leaves your machine.</p>
+            </div>
+        </section>
+
+        <section class="commands">
+            <h2>Voice Commands</h2>
+            <div class="command-grid">
+                <div class="command-col">
+                    <h4>English</h4>
+                    <code>buy 10 shares at 35 cents</code>
+                    <code>sell 5 at 60 cents</code>
+                    <code>show orders</code>
+                    <code>cancel all</code>
+                    <code>price january 25</code>
+                </div>
+                <div class="command-col">
+                    <h4>Polski</h4>
+                    <code>kup dziesięć akcji po trzydzieści pięć</code>
+                    <code>sprzedaj pięć po sześćdziesiąt</code>
+                    <code>pokaż zamówienia</code>
+                    <code>anuluj wszystko</code>
+                    <code>sprawdź cenę</code>
+                </div>
+            </div>
+        </section>
+
+        <section class="install">
+            <h2>Quick Start</h2>
+            <div class="code-block">
+                <pre><code><span class="comment"># Clone and setup</span>
+git clone https://github.com/exhuman777/claude-trader.git
+cd claude-trader
+./setup.sh
+
+<span class="comment"># Start voice trading</span>
+python voice/voice_trader.py</code></pre>
+            </div>
+            <a href="https://github.com/exhuman777/claude-trader" class="btn">
+                View on GitHub →
+            </a>
+        </section>
+
+        <section class="api-endpoints">
+            <h2>API Endpoints</h2>
+            <table>
+                <tr><td><code>show_event(slug)</code></td><td>Load markets from event URL</td></tr>
+                <tr><td><code>place_order(id, side, price, size)</code></td><td>Place limit order</td></tr>
+                <tr><td><code>place_ladder(...)</code></td><td>Create ladder of orders</td></tr>
+                <tr><td><code>quick_buy(id, size)</code></td><td>Buy at best ask</td></tr>
+                <tr><td><code>quick_sell(id, size)</code></td><td>Sell at best bid</td></tr>
+                <tr><td><code>show_orders()</code></td><td>List open orders</td></tr>
+                <tr><td><code>cancel_order(id)</code></td><td>Cancel single order</td></tr>
+                <tr><td><code>cancel_all_orders()</code></td><td>Cancel all orders</td></tr>
+                <tr><td><code>get_positions()</code></td><td>Show your positions</td></tr>
+                <tr><td><code>get_balances()</code></td><td>Check USDC balance</td></tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Built for <a href="https://claude.ai/code">Claude Code</a> users</p>
+            <p><a href="https://github.com/exhuman777/claude-trader">GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>

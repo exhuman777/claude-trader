@@ -1,0 +1,35 @@
+{
+  "trades": [
+    {
+      "command": "Find me market about Trump invading Iran and buy five dollars that it won't be till the end of January.",
+      "voice": "Find me market about Trump invading Iran and buy five dollars that it won't be till the end of January.",
+      "timestamp": "2026-01-24T19:19:00.882766"
+    }
+  ],
+  "queries": [
+    {
+      "hash": "8fdb5206",
+      "query": "kup $10 elona",
+      "result": "Unknown command. Type 'help' for commands.\n",
+      "timestamp": "2026-01-24T19:12:13.031169"
+    },
+    {
+      "hash": "8fc07c6c",
+      "query": "https://polymarket.com/event/elon-musk-of-tweets-january-20-january-27]",
+      "result": "\nLoading event: elon-musk-of-tweets-january-20-january-27\n\n  \u001b[1;36m\u25b6 EVENT\u001b[0m  Elon Musk # tweets ",
+      "timestamp": "2026-01-24T19:12:51.505455"
+    },
+    {
+      "hash": "6b4068c3",
+      "query": "show_event('')",
+      "result": "Unknown command. Type 'help' for commands.\n",
+      "timestamp": "2026-01-24T19:12:51.506829"
+    },
+    {
+      "hash": "b8822bf3",
+      "query": "Find me market about Trump invading Iran and buy five dollars that it won't be till the end of January.",
+      "result": "Executed: Find me market about Trump invading Iran and buy five dollars that it won't be till the end of January.",
+      "timestamp": "2026-01-24T19:19:00.880543"
+    }
+  ]
+}
