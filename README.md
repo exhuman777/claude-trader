@@ -14,7 +14,83 @@
    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
 ```
 
-# Claude Trader
+<p align="center">
+  <strong>Claude Trader</strong>
+</p>
+
+<p align="center">
+  <em>Trade Polymarket with Natural Language via Claude Code</em>
+</p>
+
+<p align="center">
+  <a href="docs/">Docs</a> &middot;
+  <a href="web/">Web UI</a> &middot;
+  <a href="examples/">Examples</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/agent-Claude%20Code-purple" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/market-Polymarket-brightgreen" alt="Polymarket" />
+  <img src="https://img.shields.io/badge/voice-Whisper-blue" alt="Whisper" />
+  <img src="https://img.shields.io/badge/ui-Web%20Cockpit-orange" alt="Web Cockpit" />
+</p>
+
+---
+
+**"buy 10 shares of Trump wins at 45 cents"**
+
+Natural language trading system for Polymarket integrated with Claude Code. Voice input via Whisper, web cockpit dashboard, memory/pattern system, auto-trading mode. Full API wrapper included.
+
+---
+
+## File Map
+
+```
+  claude-trader/
+  AGENTS.md
+  CLAUDE.md
+  PLAYBOOK.md
+  README.md
+  TRADING_MEMORY.md
+  UPGRADE_PLAN.md
+  _config.yml
+  alerts.py
+  auto.py
+  cockpit.py
+  cockpit_web.py
+  config.py
+  crypto.py
+  interactive.py
+  market_db.py
+  polymarket_api.py
+  requirements.txt
+  rtds_client.py
+  setup.sh
+  setup_wizard.py
+  trade.py
+  utils.py
+  voice_trade.py
+  voice_trade_simple.py
+  voice_trader_full.py
+  docs/
+    CLAUDE.md
+    README.md
+    TRADING_MEMORY.md
+    index.html
+    style.css
+  examples/
+    basic_trading.py
+    ladder_strategy.py
+    quickstart.py
+    spike_detector.py
+  memory/
+    __init__.py
+    mindmap.py
+    store.py
+  ... (29 more files)
+```
+
+---
 
 **Trade Polymarket using natural language with Claude Code.**
 
